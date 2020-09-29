@@ -302,56 +302,6 @@ int alumno_buscarId(Alumno* pArrayAlumnos, int limite, int* pIndex, int id)
 int alumno_ordenarPorNombre(Alumno* pArrayAlumnos, int limite)
 {
 	int respuesta = -1;
-	int flagSwap;
-	int i;
-	Alumno bufferAlumno;
-	int auxiliarCmp;
-	if(pArrayAlumnos != NULL && limite > 0)
-	{
-		do
-		{
-			flagSwap = 0;
-			for(i=0;i<limite-1;i++)
-			{
-				/*
-					if(array[i].isEmpty || array[i+1].isEmpty)
-					{
-						continue;
-					}
-					if(strncmp(array[i].nombre,array[i+1].nombre,NOMBRE_LEN) > 0)
-					{
-						flagSwap = 1;
-						buffer = array[i];
-						array[i] = array[i+1];
-						array[i+1]=buffer;
-					}
-					else if(strncmp(array[i].nombre,array[i+1].nombre,NOMBRE_LEN) == 0)
-					{
-						if(array[i].altura < array[i+1].altura)
-						{
-							flagSwap = 1;
-							buffer = array[i];
-							array[i] = array[i+1];
-							array[i+1]=buffer;
-						}
-					}
-				 */
-				if(pArrayAlumnos[i].isEmpty || pArrayAlumnos[i+1].isEmpty)
-				{
-					continue;
-				}
-				auxiliarCmp = strncmp(pArrayAlumnos[i].nombre,pArrayAlumnos[i+1].nombre,LONG_NOMBRE);
-				if(	 auxiliarCmp > 0 ||
-						(auxiliarCmp == 0 && pArrayAlumnos[i].legajo < pArrayAlumnos[i+1].legajo) )
-				{
-					flagSwap = 1;
-					bufferAlumno = pArrayAlumnos[i];
-					pArrayAlumnos[i] = pArrayAlumnos[i+1];
-					pArrayAlumnos[i+1]=bufferAlumno;
-				}
-			}
-			limite--;
-		}while(flagSwap);
-	}
+	
 	return respuesta;
 }
