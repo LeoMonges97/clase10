@@ -211,7 +211,7 @@ int nac_printById(Nacionalidad* pArray, int limit, int index)
 /**
  * Como lo implemento?
  * int posicionLibre;
- * if(alumno_buscarLibre(alumno,QTY_ALUMNOS,&posicionLibre) == 0)
+ * if(alumno_buscarLibre(alumno,QTY_NAC,&posicionLibre) == 0)
  * {
  *   posicionLibre -> alta
  * }
@@ -237,7 +237,7 @@ int nac_buscarLibreRef(Nacionalidad* pArray, int limit, int *pIndex)
 /**
  * Como lo implemento?
  * int posicionLibre;
- * posicionLibre = alumno_buscarLibre(alumno,QTY_ALUMNOS);
+ * posicionLibre = alumno_buscarLibre(alumno,QTY_NAC);
  * if(posicionLibre >=0)
  * {
  *   posicionLibre -> alta

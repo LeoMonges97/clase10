@@ -11,7 +11,7 @@
 #define TRUE 1
 #define FALSE 0
 #define LONG_NOMBRE 50
-#define QTY_ALUMNOS 5
+#define QTY_NAC 5
 #define MIN_LEGAJO 1
 #define MAX_LEGAJO 100
 
@@ -37,7 +37,5 @@ int nac_buscarLibreRef(Nacionalidad* pArray, int limit, int *pIndex);
 int nac_buscarLibreValor(Nacionalidad* pArray, int limit);
 
 int nac_ordenarPorNombre(Nacionalidad* pArray, int limite);
-
-
 
 #endif /* NAC_H_ */

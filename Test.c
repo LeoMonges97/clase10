@@ -3,6 +3,7 @@
 #include <limits.h>
 #include "utn.h"
 #include "alumno.h"
+#include "nac.h"
 
 int main(void)
 {
